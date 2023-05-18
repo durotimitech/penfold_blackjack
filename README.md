@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+Installation
+1 - Install required packages: `yarn` (or npm)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2 - Run the local dev server with `yarn start`
 
-## Available Scripts
+3 - Run the test suit with `yarn test`
 
-In the project directory, you can run:
+Aim
+* Fix the tests to make the game work!
 
-### `npm start`
+Rules
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* (DONE) This is a simplified version of BlackJack so there are only two players the 'player' and the 'dealer'. There is also no gambling!
+* (DONE) The game is played with a deck of 52 cards
+* (DONE) At the start of the game the deck is shuffled and two cards are dealt to the player and the dealer
+* Play begins with the player. The following choices available to the player:
+    * (DONE) "Stand": Player stays put with their cards.
+    * (DONE) "Hit": Player draws another card. If this card causes the player's total points to exceed 21 ("bust") then they will lose.
+* (DONE) After the player has had their turn, the dealer will turn over their first card.
+* (DONE) If the dealer has a score of 16 or less then the dealer must take another card
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Result
 
-### `npm test`
+* (DONE) If the player or the dealer goes over 21 then they will 'bust' and lose.
+* (DONE) If no player has bust then the player with the higher point total will win.
+* (DONE) If both players have the same score the result is a draw unless one player has blackjack in which case they win.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Scoring
 
-### `npm run build`
+* (DONE) Aces may be counted as 1 or 11 points. The higher value applies if it does not cause the player to go over 21
+* (DONE) Cards 2 to 9 are same as face value (e.g 5 = 5 points)
+* (DONE) Ten, Jack, Queen and King cards count as ten points.
+* (DONE) The value of a hand is the sum of the point values of the individual cards. Except, a "blackjack" is the highest hand, consisting of one ace and any 10-point card, and it outranks all other 21-point hands.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
